@@ -209,6 +209,7 @@ DIST          = /opt/Qt/5.9.9/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/spec_post.prf \
+		../hello_world/.qmake.stash \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -394,6 +395,7 @@ Makefile: ../hello_world/hello_world.pro /opt/Qt/5.9.9/gcc_64/mkspecs/linux-g++/
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/qt_config.prf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/toolchain.prf \
 		/opt/Qt/5.9.9/gcc_64/mkspecs/features/default_pre.prf \
@@ -570,6 +572,7 @@ Makefile: ../hello_world/hello_world.pro /opt/Qt/5.9.9/gcc_64/mkspecs/linux-g++/
 /opt/Qt/5.9.9/gcc_64/mkspecs/features/qt_config.prf:
 /opt/Qt/5.9.9/gcc_64/mkspecs/linux-g++/qmake.conf:
 /opt/Qt/5.9.9/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /opt/Qt/5.9.9/gcc_64/mkspecs/features/exclusive_builds.prf:
 /opt/Qt/5.9.9/gcc_64/mkspecs/features/toolchain.prf:
 /opt/Qt/5.9.9/gcc_64/mkspecs/features/default_pre.prf:
@@ -697,22 +700,7 @@ main.o: ../hello_world/main.cpp /opt/Qt/5.9.9/gcc_64/include/QtCore/QCoreApplica
 		/opt/Qt/5.9.9/gcc_64/include/QtCore/qvarlengtharray.h \
 		/opt/Qt/5.9.9/gcc_64/include/QtCore/qcontainerfwd.h \
 		/opt/Qt/5.9.9/gcc_64/include/QtCore/qobject_impl.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qeventloop.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/QDebug \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qdebug.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qhash.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qmap.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qtextstream.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qiodevice.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qlocale.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qvariant.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qshareddata.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qvector.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qpoint.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qset.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qcontiguouscache.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qsharedpointer.h \
-		/opt/Qt/5.9.9/gcc_64/include/QtCore/qsharedpointer_impl.h
+		/opt/Qt/5.9.9/gcc_64/include/QtCore/qeventloop.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../hello_world/main.cpp
 
 ####### Install
